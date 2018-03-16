@@ -1,0 +1,53 @@
+{
+  "name": "reg-form",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "iban": "0.0.10",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "next",
+    "react-script": "^2.0.5",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2",
+    "redux-form": "^7.3.0",
+    "redux-mock-store": "^1.5.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "client": "react-scripts start",
+    "server": "nodemon server.js",
+    "start": "npm-run-all -p server client",
+    "prettier": "prettier --single-quote --print-width=100 \"**/*.{js,jsx}\" -trailing-comma es5 --write",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-watch": "^3.1.3",
+    "husky": "^0.14.3",
+    "jest-junit": "^3.6.0",
+    "lint-staged": "^7.0.0",
+    "nodemon": "^1.17.1",
+    "prettier": "^1.11.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.2.0"
+  },
+  "lint-staged": {
+    "{src,__{test|mocks}__}/**/*.js": [
+      "prettier --single-quote --trailing-comma es5 --write",
+      "git add"
+    ]
+  }
+}
