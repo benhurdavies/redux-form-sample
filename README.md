@@ -2,7 +2,7 @@
 
 ## How to get this up and running?
 
-1.  Clone the repo: `git clone https://github.com/smava/Davies-Benhur-.git`
+1.  Clone the repo: `git clone https://github.com/benhurdavies/redux-form-sample.git`
 1.  `npm install`
 1.  Create `.env.development.local` file from `.env.example` and edit as necessary
 1.  `npm start` to Run client app and test server together.
